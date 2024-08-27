@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miyomi</title>
+    <!-- DaisyUI + Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope-font{
+            font-family: "Manrope", sans-serif;
+        }
+        .arrow {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            rotate: -45deg;
+            background-color: #ABEF5F;
+        }
+    </style>
+
+    <!-- font awesome cdn-->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+      >
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#212121',
+                'second-color': '#ABEF5F',
+                'p-color-1': '#494949',
+                'p-color-2': '#737373',
+                'light-green': 'rgba(171, 239, 95, 0.5)',
+                'light-green-2': 'rgba(171, 239, 95, 0.2)',
+                'bg-image': "url('./assets/bg.jpg')"
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="manrope-font bg-[#F4F4F4]">
+    <header class="bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF] px-5">
+      <!-- nav-bar-main -->
+        <nav class="lg:pt-12 pt-8 max-w-[1170px] mx-auto">
+          <div class="navbar justify-between">
+            <!-- nav start -->
+            <div class="justify-start md:w-5/12">
+              <i class="fa-solid fa-arrow-right arrow text-black flex justify-center items-center rounded-full mr-2"></i>
+              <a class="lg:text-3xl text-2xl font-extrabold">Miyomi</a>
+            </div>
+            <!-- nav center -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          <!-- nav end -->
+            <div class="navbar-end gap-4">
+              <i class="fa-solid fa-magnifying-glass w-12 h-12 hidden md:flex border border-[#E9E9E9] lg:text-2xl text-xl justify-center items-center rounded-full bg-white"></i>
+              <i class="fa-solid fa-cart-shopping w-12 h-12 border hidden md:flex border-[#E9E9E9] lg:text-2xl text-xl justify-center items-center rounded-full bg-white"></i>
+              <a class="btn hidden md:flex bg-second-color rounded-full text-xl font-extrabold shadow-none">
+                Book Consult <i class="fa-solid fa-arrow-right arrow bg-primary-color text-white flex justify-center items-center rounded-full"></i></a>
+              <i class="fa-solid fa-bars lg:hidden w-12 h-12 border border-[#E9E9E9] text-2xl flex justify-center items-center rounded-full"></i>
+            </div>
+          </div>
+        </nav>
+      <!-- hero-section -->
+       <div class="container mx-auto flex flex-col justify-center items-center text-center">
+          <div class="lg:mb-6 mb-4 mx-auto">
+             <img src="./assets/banner.png" alt="">
+          </div>
+          <div class="lg:mb-8 mb-5">
+             <h1 class="primary-color lg:text-6xl text-3xl font-extrabold lg:max-w-[1064px] mx-auto mb-7">The barn house, with its distinctive design, is truly eye-catching.</h1>
+             <p class="lg:max-w-[950px] mx-auto text-p-color-1">The barn house is a harmonious blend of old and new, showcasing rustic charm and modern elegance. Its weathered wood, sleek metal accents, and expansive windows create a warm and inviting atmosphere.</p>
+          </div>
+          <div class="lg:mb-[100px] mb-10 w-full md:w-[206px] flex justify-center items-center ">
+             <button class="btn w-full bg-light-green border-none flex gap-2 justify-center items-center h-12 font-bold text-xl rounded-full">View Details 
+               <i class="fa-solid fa-arrow-right arrow text-black flex justify-center items-center rounded-full"></i></button>
+          </div>
+       </div>
+    </header>
+
+    <main >
+      <!-- About us section -->
+      <section class="max-w-[1170px] mx-auto  lg:my-[100px] my-8 px-5 lg:px-0">
+        
+        <!-- content and image -->
+        <div class="md:flex md:gap-9 gap-6 md:justify-between items-end">
+          <!-- content -->
+          <div class="relative">
+            <img class="absolute -left-[48px] -top-[62px] hidden lg:flex" src="./assets/Vector.png" alt="">
+            <div class="mb-7 mt-2 flex justify-center lg:justify-start">
+              <span class="bg-white px-4 py-2 rounded-full font-bold text-p-color-1 max-w-32"><i class="fa-solid fa-arrow-right"></i> About Us</span>
+            </div>
+            <div>
+              <h2 class="font-bold lg:text-4xl text-2xl mb-6 lg:max-w-lg lg:text-left text-center">We craft thoughtfully curated living spaces.</h2>
+              <p class="text-p-color-1 mb-6 lg:mb-8 lg:text-left text-center">The barn house enthralls with its confluence of rustic allure and contemporary refinement, adorned with weathered timber and sleek metallic embellishments.</p>
+            </div>
+
+            <!-- card-container -->
+            <div class="mb-8 lg:mb-0">
+              <!-- card 1-->
+              <div class="p-6 bg-white rounded-2xl flex gap-6 max-w-xl mb-6">
+                <div>
+                <img src="./assets/commercial.png" alt="">
+                </div>
+                <div>
+                <h4 class="font-extrabold text-xl text-p-color-1 mb-3">Commercial</h4>
+                <p class="text-p-color-2 max-w-80">The barn house, a captivating blend of rustic and modern elements, is available for commercial lease.</p>
+                </div>
+              </div> 
+              <!-- card 2-->
+              <div class="p-6 bg-white rounded-2xl flex gap-6 max-w-xl">
+                <div>
+                <img src="./assets/residential.png" alt="">
+                </div>
+                <div>
+                <h4 class="font-extrabold text-xl text-p-color-1 mb-3">Residential</h4>
+                <p class="text-p-color-2 max-w-80">Residential property with this design boasts a distinctive and visually striking appearance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div>
+            <img src="./assets/Rectangle.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- Unnamed section -->
+      <section class="max-w-[1170px] md:mx-auto pb-8 md:pb-[100px]">
+        <!-- card-container -->
+        <div class="lg:p-8 p-6 md:grid lg:grid-cols-4 md:grid-cols-2 bg-white rounded-3xl mx-5 lg:mx-0">
+          <!-- card 1-->
+          <div class="text-center p-6">
+            <i class="fa-light fa-message-lines text-p-color-1 text-4xl mb-3"></i>
+            <h2 class="md:text-[40px] text-3xl font-extrabold text-p-color-1 mb-2">50k+</h2>
+            <p class="font-medium text-p-color-2">Our Main Offices</p>
+          </div>
+          <!-- card 2-->
+          <div class="text-center p-6">
+            <i class="fa-sharp fa-light fa-house-building text-p-color-1 text-4xl mb-3"></i>
+            <h2 class="md:text-[40px] text-3xl font-extrabold text-p-color-1 mb-2">90+</h2>
+            <p class="font-medium text-p-color-2">Work Departments</p>
+          </div>
+          <!-- card 3-->
+          <div class="text-center p-6">
+            <i class="fa-light fa-user-group text-p-color-1 text-4xl mb-3"></i>
+            <h2 class="md:text-[40px] text-3xl font-extrabold text-p-color-1 mb-2">100k+</h2>
+            <p class="font-medium text-p-color-2">Our Happy Client</p>
+          </div>
+          <!-- card 4-->
+          <div class="text-center p-6">
+            <i class="fa-light fa-user-headset text-p-color-1 text-4xl mb-3"></i>
+            <h2 class="md:text-[40px] text-3xl font-extrabold text-p-color-1 mb-2">500+</h2>
+            <p class="font-medium text-p-color-2">Staff Members</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Works Process section -->
+      <section class="max-w-[1170px] mx-auto px-5 lg:px-0 lg:pb-[100px]">
+          <div class="flex justify-center flex-col items-center">
+            <span class="bg-white px-4 py-2 rounded-full font-bold text-p-color-1 mb-7"><i class="fa-solid fa-arrow-right"></i> How we works</span>
+            <h2 class="font-bold lg:text-4xl text-2xl mb-6 lg:max-w-lg text-center">Our Works Process</h2>
+            <p class="text-p-color-1 mb-6 lg:mb-8 text-center max-w-2xl">Our work process delivers distinctive designs through focused planning, supervision, and budget management.</p>
+          </div>
+
+          <div class="mb-8 lg:mb-0 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
+              <!-- card 1-->
+              <div class="p-6 bg-[#E7C1D3] rounded-2xl">
+                <img class="mb-3" src="./assets/concept.png" alt="">
+                <h4 class="font-extrabold text-xl text-primary-color mb-3">Concept</h4>
+                <p class="text-p-color-1 max-w-80">The concept features a design that stands out with its unique and striking appearance.</p>
+              </div>
+              <!-- card 2-->
+              <div class="p-6 bg-[#EFDA6E] rounded-2xl">
+                <img class="mb-3" src="./assets/flow-chart-2.png" alt="">
+                <h4 class="font-extrabold text-xl text-primary-color mb-3">Design Process</h4>
+                <p class="text-p-color-1 max-w-80">The design process aims to create a distinctive and striking appearance.</p>
+              </div>
+              <!-- card 3-->
+              <div class="p-6 bg-[#A4DAC3] rounded-2xl">
+                <img class="mb-3" src="./assets/vision.png" alt="">
+                <h4 class="font-extrabold text-xl text-primary-color mb-3">SuperVision</h4>
+                <p class="text-p-color-1 max-w-80">Supervision ensures the design's distinctive and striking appearance is accurately realized.</p>
+              </div>
+              <!-- card 4-->
+              <div class="p-6 bg-[#77AAEA] rounded-2xl">
+                <img class="mb-3" src="./assets/budget-planning.png" alt="">
+                <h4 class="font-extrabold text-xl text-primary-color mb-3">Budget Planning</h4>
+                <p class="text-p-color-1 max-w-80">Budget planning ensures the design's distinctive appearance within cost limits.</p>
+              </div>
+          </div>
+      </section>
+
+      <!--Latest Portfolio section  -->
+      <section class="lg:bg-white px-5 lg:px-0 lg:py-[100px] py-8">
+      
+        <div class="max-w-[1170px] mx-auto">
+          <div class="flex justify-center flex-col items-center">
+            <span class="bg-light-green-2 px-4 py-2 rounded-full font-bold text-p-color-1 mb-7"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</span>
+            <h2 class="font-bold lg:text-4xl text-2xl mb-6 lg:max-w-lg text-center">Our Latest Portfolio</h2>
+            <p class="text-p-color-1 mb-6 lg:mb-8 text-center max-w-2xl">Our latest portfolio highlights a collection of our most distinctive and innovative designs, demonstrating our commitment to creativity and excellence in every project.</p>
+          </div>
+          <!-- cards container-->
+          <div class="grid lg:grid-cols-12 grid-cols-1 lg:grid-rows-2 md:gap-6 gap-4">
+            <!-- first card -->
+            <div class="lg:col-span-8 lg:flex border border-[#E9E9E9] p-6 rounded-2xl bg-white">
+             
+              <div class="lg:grid grid-cols-5 gap-6">
+                 <!-- image -->
+                <div class="lg:col-span-2 col-span-3 mb-3 md:mb-0">
+                  <img src="./assets/img6.png" alt="">
+                </div>
+                <!-- content -->
+                <div class="lg:col-span-3">
+                  <h3 class="font-extrabold text-2xl text-p-color-1 mb-4">Commercial</h3>
+                  <p class="mb-5 text-p-color-2">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                  <div class="flex gap-3">
+                    <h4 class="font-extrabold text-xl text-primary-color">View Details</h4> <i class="fa-solid fa-arrow-right arrow text-black flex justify-center items-center rounded-full mr-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--second card-->
+            <div class="lg:col-span-4 border border-[#E9E9E9] p-6 rounded-2xl bg-white">
+              <img src="./assets/img7.png" alt="">
+            </div>
+            <!-- third card -->
+            <div class="lg:col-span-3 border border-[#E9E9E9] p-6 rounded-2xl bg-white">
+              <img src="./assets/img8.png" alt="">
+            </div>
+            <!-- fourth card -->
+            <div class="lg:col-span-6 lg:flex border border-[#E9E9E9] p-6 rounded-2xl bg-white">
+              <div class="lg:grid grid-cols-2 gap-6">
+                  <!-- image -->
+                <div class="grid-cols-1 mb-3 md:mb-0">
+                  <img src="./assets/img4.png" alt="">
+                </div>
+                <!-- content -->
+                <div>
+                  <h3 class="font-extrabold text-2xl text-p-color-1 mb-4">Commercial</h3>
+                  <p class="mb-5 text-p-color-2">The barn house captivates with its blend of rustic charm and modern. </p>
+                  <div class="flex gap-3">
+                    <h4 class="font-extrabold text-xl text-primary-color">View Details</h4> <i class="fa-solid fa-arrow-right arrow text-black flex justify-center items-center rounded-full mr-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fifth card -->
+            <div class="lg:col-span-3 border border-[#E9E9E9] p-6 rounded-2xl bg-white">
+              <img src="./assets/img5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Task section -->
+      <section class="px-5 lg:px-0 lg:py-[100px] py-8">
+      
+        <div class="max-w-[1170px] mx-auto flex flex-col justify-center items-center">
+          <div class="flex justify-center flex-col items-center">
+            <span class="bg-light-green-2 px-4 py-2 rounded-full font-bold text-p-color-1 mb-7"><i class="fa-solid fa-arrow-right"></i> Main Offices</span>
+            <h2 class="font-bold lg:text-4xl text-2xl mb-6 lg:max-w-lg text-center">Our Main Offices</h2>
+            <p class="text-p-color-1 mb-6 lg:mb-8 text-center lg:max-w-2xl">Our main offices exemplify a blend of modern sophistication and functionality, providing an inspiring environment that enhances creativity and efficiency.</p>
+          </div>
+          <!-- Team container-->
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-9">
+              <!-- designer-1-->
+              <div class="flex flex-col gap-4 p-6 justify-center items-center bg-white border border-[#E9E9E9] rounded-3xl">
+                <div class="h-64 w-64">
+                  <img class="w-full h-full rounded-2xl object-cover" src="./assets/office-3.jpg" alt="">
+                </div>
+                <div><h4 class="font-extrabold text-p-color-1">Miyomi Office,Hongkong</h4></div>
+                <!-- icons -->
+                <div class="flex gap-2 text-p-color-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                </div>
+              </div>
+              <!-- designer-2-->
+              <div class="flex flex-col gap-4 p-6 justify-center items-center bg-white border border-[#E9E9E9] rounded-3xl">
+                <div class="h-64 w-64">
+                  <img class="w-full h-full rounded-2xl object-cover" src="./assets/office-1.jpg" alt="">
+                </div>
+                <div><h4 class="font-extrabold text-p-color-1">Miyomi Office,Singapore</h4></div>
+                <!-- icons -->
+                <div class="flex gap-2 text-p-color-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                </div>
+              </div>
+              <!-- designer-3-->
+              <div class="flex flex-col gap-4 p-6 justify-center items-center bg-white border border-[#E9E9E9] rounded-3xl">
+                <div class="h-64 w-64">
+                  <img class="w-full h-full rounded-2xl object-cover" src="./assets/office-2.jpg" alt="">
+                </div>
+                <div><h4 class="font-extrabold text-p-color-1">Miyomi Office,Dubai</h4></div>
+                <!-- icons -->
+                <div class="flex gap-2 text-p-color-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section class="bg-no-repeat bg-cover lg:border-8 border-4 border-white py-8 lg:py-0" style="background-image: url('./assets/bg.jpg');">
+        <div class="max-w-[970px] mx-auto px-5 lg:px-0 lg:py-[100px]">
+          <div class="flex justify-center flex-col items-center">
+            <span class="bg-light-green-2 px-4 py-2 rounded-full font-bold text-p-color-1 mb-7"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</span>
+            <h2 class="font-bold lg:text-4xl text-2xl mb-6 lg:max-w-lg text-center">Let’s Discuss Next Project</h2>
+            <p class="text-p-color-1 mb-6 lg:mb-8 text-center max-w-2xl">Let’s talk about your next project and how we can bring your ideas to life with our expertise.</p>
+          </div>
+          <!-- input field -->
+          <div class="flex-col gap-6">
+          
+              <div class="w-full flex lg:flex-row flex-col gap-6 mb-6">
+                <input class="rounded-full md:h-16 h-14 flex-grow pl-6 pr-6 border border-[#E9E9E9] outline-none placeholder:font-medium" type="text" required placeholder="First Name*">
+                <input class="rounded-full md:h-16 h-14 flex-grow pl-6 pr-6 border border-[#E9E9E9] outline-none placeholder:font-medium" type="text" required placeholder="Last Name*">
+              </div>
+              <div class="w-full flex lg:flex-row flex-col gap-6 mb-6">
+                <input class="rounded-full md:h-16 h-14 flex-grow px-6 border border-[#E9E9E9] outline-none placeholder:font-medium"  type="text" required placeholder="Phone Number*">
+                <input class="rounded-full md:h-16 h-14 flex-grow px-6 border border-[#E9E9E9] outline-none placeholder:font-medium"  type="email" required placeholder="Email Number*">
+              </div>
+              <div class="flex mb-6">
+                <textarea class="rounded-[32px] pt-6 pl-6 pr-6 flex-grow h-60 max-h-60 overflow-auto outline-none min-h-16 border border-[#E9E9E9] placeholder:font-medium" name="" id="" placeholder="Write your message here"></textarea>
+              </div>
+              <div class="flex justify-center items-center ">
+                <button class=" btn btn-wide bg-second-color border-none flex-grow gap-2 justify-center items-center h-12 font-bold text-xl rounded-full">
+                  Send Mail <i class="fa-solid fa-arrow-right arrow text-white flex justify-center items-center rounded-full bg-primary-color"></i></button>
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+    </main>
+    
+    <footer class="flex flex-col bg-[#1C1C1C] py-16 px-8 lg:py-[100px] mx-auto justify-center items-center">
+      <!-- footer section -->
+      <div class="max-w-[1170px] mx-auto">
+        <!-- logo -->
+        <div class="flex justify-center mb-4">
+          <i class="fa-solid fa-arrow-right arrow text-primary-color flex justify-center items-center rounded-full mr-2"></i>
+          <a class="text-3xl text-white font-extrabold">Miyomi</a>
+        </div>
+        <p class="text-p-color-2 text-center mb-8 lg:mb-12 max-w-2xl">Miyomi Company is dedicated to delivering innovative solutions and exceptional quality in every project we undertake.</p>
+        <div class="mb-8 lg:mb-12">
+          <ul class="md:flex flex-col lg:flex-row text-center text-[#E9E9E9] font-medium lg:gap-[120px]">
+            <li class="mb-8"><a>Home</a></li>
+            <li class="mb-8"><a>Services</a></li>
+            <li class="mb-8"><a>Portfolio</a></li>
+            <li class="mb-8"><a>Blogs</a></li>
+            <li class="mb-8"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center">
+          <button class="btn w-full flex bg-[#ABEF5F] border-none gap-2 justify-center items-center h-12 font-bold text-xl rounded-full md:w-52 shadow-none">Book Consult 
+            <i class="fa-solid fa-arrow-right arrow text-white flex justify-center items-center rounded-full bg-primary-color"></i></button>
+       </div>
+      </div>
+    </footer>
+</body>
+</html>
